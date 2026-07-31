@@ -1,0 +1,484 @@
+
+Identity Operator
+it compares the address of the object.
+
+x={'name':'neeraj'}
+y={'name':'neeraj'}
+print(id(x),id(y))
+print(x is y)
+
+C:\Users\HP\Desktop\python> py new.py
+2023565385920 2023565533440
+False
+
+
+slice to reverse
+x=input("ENter Ypur Name:")
+print(x[::-1])
+    
+slice (start,stop,step/direction)
+
+
+
+index()
+used to find the index of any element 
+
+find()
+
+if the find elemnt is not match it will give outpur -1.
+
+replace()
+it replace the string to any other string.
+
+count()
+count function is helped to count the frequeny of the element
+
+
+join()
+it is used to join two strings
+
+split()
+split function is used to break string into parts
+
+
+LIST
+colletion of elements homogenous and hetrogenous
+represnted by[] with comma(,) seperated elements
+sequential order
+indexing support 
+slicing support
+eg-my_list=[12,20,30,'python','java']
+print(my_list,type(my_list))
+
+methods in lists
+
+1-copy()
+l=[2,4,6,'python','java']
+l1=l.copy()
+print(l,l1,id(l),id(l1))
+
+2-clear()
+l=[2,4,6,'python','java']
+l.clear()
+print(l)
+
+dictionary
+collection of key value pairs
+key must be unique
+value may be duplicate
+represeted by {} with comma(,) sepereated elements
+maped data type
+indexing not support
+slicing not support
+Both key and value are either homogenous or hetrogenous.
+
+
+d1={'name':'sanjay', 'age':23,"qalification":'btech'}
+d2={'x':10,'y':20}
+# copy()
+# # d1=d.copy()
+# # print(d,d1)
+# # print(id(d),id(d1))
+
+# #clear()
+# d.clear()
+# print(d)
+
+#get()
+# print(d.get('name'))
+# print(d.get('Name'))
+# print(d.get('Name','Guest'))
+# print(d.get('name',"Guest"))
+
+#keys()
+#print(d.keys())
+
+#values()
+# print(d.values)
+
+#items()
+# print(d.items())
+
+#update()
+# d1.update(d2)
+# print(d1)
+# print(d2)
+
+#setdefault()
+# print(d1.setdefault('Name','rahul'))
+# print(d1)
+
+# #fromkeys()
+# t=('name','age',1)
+# d=dict.fromkeys(t,None)
+# print(d)
+
+#pop()
+# d1.pop('age')
+# print(d1)
+
+#popitem()
+# print(d1.popitem())
+# print(d1)
+
+#set()
+# myset={10,30,10,'python','java'}
+# print(myset,type(myset))
+
+# myset={10,20,10,20,'python','java'}
+# print(len(myset))
+# print(type(myset))
+# print(id(myset))
+# print(myset)
+# print(eval(input("Enter a set: ")))
+
+
+myset={10,20,30,40,50}
+print(max(myset))
+print(min(myset))
+print(sum(myset))
+
+
+Set methods
+#double set methods
+#union()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# print(s1.union(s2))
+
+
+#INTERSECTION()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# print(s1.intersection(s2))
+
+#DIFFERENCE()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# print(s1.difference(s2))
+
+#SYMMETRIC DIFFERENCE()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# print(s1.symmetric_difference(s2))
+
+#intersection_update()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# s1.intersection_update(s2)
+# print(s1)
+
+
+#difference update()
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# s1.difference_update(s2)
+# print(s1)
+
+#symmetric_difference_update()
+# s1={1,2,3,4,5}  
+# s2={4,5,6,7,8}
+# s1.symmetric_difference_update(s2)
+# print(s1)
+
+#Sub set and Super set
+# s1={1,2,3,4,5,6,7,8,9,10}
+# s2={4,5,6,7}
+# print(s1.issubset(s2))
+# print(s2.issubset(s1))
+# print(s2.issuperset(s1))
+# print(s1.issuperset(s2))
+
+# s1={1,2,3,4,5}
+# s2={4,5,6,7,8}
+# print(s1.isdisjoint(s2))
+
+# s={1,2,3,4,5}
+# s.add('python')
+# print(s)
+
+
+#Single set methods
+# copy()-copy the elements of one set to another set
+# clear()-clear the set
+# add()-add an element to the set
+# update()-add multiple elements to the set
+# remove()-remove an element from the set, raises an error if element not found
+# discart()- remove an element from the set if present
+# pop()-remove and return an random element from the set
+
+s={1,2,3,4,5}
+s.update(['java','php'])
+print(s)
+
+s.remove('java')
+print(s)
+
+s.discard('java')
+print(s)
+
+s.pop()
+print(s)
+
+
+
+Patters
+# n=5
+# for i in range(1,n+1):
+#     ch='A'
+#     for _ in range(1,i+1):
+#         print(ch,end=' ')
+#         ch=chr(ord(ch)+1)
+#     print()
+
+# n=5
+# for i in range(1,n+1):
+#     ch='A'
+#     for _ in range(1,i+1):
+#         print(ch,end=' ')
+#         ch=chr(ord(ch)+2)
+#     print()
+
+# n=5
+# ch='A'
+# for i in range(1,n+1):
+ 
+#     for _ in range(1,i+1):
+#         print(ch,end=' ')
+#         ch=chr(ord(ch)+1)
+#     print()
+
+
+functions
+def display():
+    print("hello\n")
+display()
+
+def display1():
+    return "Hello"
+display1()
+print(display1())
+
+
+Types Of function on the basis of arguments
+1-Positional argument
+2-default Positional argument
+3-variable length positional argument
+4-keyword argument
+5-default key-word argument
+6-variable length keyword arguments
+
+On the bais of argument keyword argument and return type
+
+3-
+# def add(* n):
+#     sum=0
+#     for i in n:
+#         sum=sum+i
+#     print("sum:",sum)
+# x=eval(input("enter any tuple value:"))
+# add(*x)
+
+# def add(x,y=0,*z):
+#     print(x)
+#     print(y)
+#     print(z)
+# add(1,2,3,4,5,6,7,8,9)
+
+
+#1-With argument and with return type
+# def add(a,b):
+#    return a+b
+# ans=add(2,3)
+# print(ans)
+
+# 2-with argument and without return type
+# def add(a,b):
+#     print(a+b)
+# add(4,6)
+
+#3-Without arugument and with return type
+# def add():
+#     a=10
+#     b=20
+#     return a+b
+# print(add())
+
+
+
+MAP
+# l=[1,2,3,4,5]
+# def square(n):
+#     return n*n
+# res=map(square,l)
+# print(res)
+# print(tuple(res))
+# print(list(res))
+
+
+# l=[1,2,3,4,5]
+# l1=[]
+# for i in l:
+#     l1.append(i*i)
+# print(l1)
+
+# l=[1,2,3,4,5]
+# x=0
+# for i in l:
+#     l[x]=i*i
+#     x=x+1
+# print(l)
+
+# l3=[4,5]
+# l=[1,2,3,4,5]
+# l2=[3,4,5,6]
+# def add(x,y,z):
+#     return x+y+z
+# res=map(add,l3,l,l2)
+# print(list(res))
+
+l1,l2,l3=[1,2,3,4],[5,6,7,8],[9,10,11,12]
+def add(x,y,z):
+    return x+y+z
+print(tuple(map(add,l1,l2,l3)))
+
+#Numbers Greater than 60
+# s=[50,60,70,65,40,30,90]
+# def firstdiv(n):
+#     if n>=60:
+#         return n
+# print(tuple(filter(firstdiv,s)))
+
+#Even Numbers
+# n=eval(input("Enter The Values:"))
+# def even(n):
+#     if n%2==0:
+#         return n
+# print(list(filter(even,n)))
+
+
+#Odd Numbers
+# n=eval(input("ENter The Value:"))
+# def odd(n):
+#     if n%2 !=0:
+#         return n
+# print(list(filter(odd,n)))
+
+#string of vowel
+# s=input("Enter The String:")
+# def str(n):
+#     if n in 'aeiou':
+#         return n
+# res=list(filter(str,s))
+# print(''(res))
+
+
+Reduce
+import functools
+l=[10,5,20,7,25,8,2]
+def sum(x,y):
+   if x>y:
+      return x
+   else:
+        return y
+res=functools.reduce(sum,l)
+print(res)
+
+max
+import functools
+l=[10,5,20,7,25,8,2]
+def sum(x,y):
+   if x>y:
+      return x
+   else:
+        return y
+res=functools.reduce(sum,l)
+print(res)
+
+min
+import functools
+l=[10,5,20,7,25,8,2]
+def sum(x,y):
+   if x<y:
+      return x
+   else:
+        return y
+res=functools.reduce(sum,l)
+print(res)
+
+lambda filter and map
+l=[1,2,3,4,5]
+print(list(map(lambda n: n*n,l)))
+print(list(map(lambda n: 'even' if n%2==0 else "odd",l)))
+print(list(filter(lambda n:n if n%2!=0 else None,l)))
+
+
+
+q-find largest number from the input of the Usersfrom functools import reduce
+l=[1,2,3,4,5]
+
+n=int(input("Which  largest number You want:"))
+if n <= len(l):
+    for _ in range(n):
+        x=reduce(lambda x,y:x if x>y else y,l)
+        l.remove(x)
+    print(f"The {n}th largest number is {x}")
+else:
+    print("please enter valid element")
+
+
+Recursion
+
+# Q-wap to print n natural numbers
+def netural_no(n):
+    if n==0:
+        return None
+    netural_no(n-1)
+    print(n)
+n=10
+netural_no(n)
+
+# Q-wap to print n natural numbers
+# def netural_no(n):
+#     if n==0:
+#         return None
+#     netural_no(n-1)
+#     print(n)
+# n=10
+# netural_no(n)
+
+#Q-WAP to print n even numbers
+# def even_no(n):
+#       if n==0:
+#          return None
+#       even_no(n-1)
+#       print(2*n)
+# n=10
+# even_no(n)
+
+# Q-WAP to calculate sum of n natural numbers
+# def sumofnum(n):
+#     if n==1:
+#         return 1
+#     return 2*n+sumofnum(n-1)
+# n=5
+# res=sumofnum(n)
+# print(res)
+
+# Q-WAP to calculate sum of n odd numbers
+# def sumofnum(n):
+#     if n==1:
+#         return 2*n-1
+#     return 2*n-1+sumofnum(n-1)
+# n=5
+# res=sumofnum(n)
+# print(res)
+
+# Q-WAP to calculate factorial of n natural number
+# def fact(n):
+#     if n==1:
+#         return 1
+#     return n*fact(n-1)
+# n=5
+# res=fact(n)
+# print(res)
